@@ -30,13 +30,13 @@ class game{
     {
         draw_partition();
         //dart
-        this.dart.src = "../assets/images/dart.png";
+        this.dart.src = "assets/images/dart.png";
         this.dart.onload = ()=>{
         this.ctx.drawImage(this.dart, 950, this.dart_pos_y, this.obj_width, this.obj_height);}
         
         //oops and pop
-        this.pop.src = "../assets/images/pop.png";
-        this.oops.src = "../assets/images/oops.png";
+        this.pop.src = "assets/images/pop.png";
+        this.oops.src = "assets/images/oops.png";
         this.pop.onload = ()=>{
             this.ctx.drawImage(this.pop, 950, 600, this.obj_width, this.obj_height);}
         this.oops.onload = ()=>{
@@ -49,11 +49,11 @@ class game{
             this.image_array[i] = new Image();
             if(i%2 == 0)
             {
-                this.image_array[i].src = "../assets/images/balloon.png";
+                this.image_array[i].src = "assets/images/balloon.png";
             }
             else
             {
-                this.image_array[i].src = "../assets/images/brick.png";
+                this.image_array[i].src = "assets/images/brick.png";
             }
             this.image_array[i].onload = () => {
                 loaded()
