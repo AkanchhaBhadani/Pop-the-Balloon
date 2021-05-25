@@ -102,7 +102,7 @@ class game{
         var wait_interval = Math.random()*800;
         while(wait_interval < 400)
         {
-            wait_interval = Math.random()*1000;
+            wait_interval = Math.random()*800;
         }
         if (Date.now() - start_time > wait_interval)
         {
@@ -128,7 +128,7 @@ class game{
                 this.position_y[pos_x] -= 50;
             }
 
-            if (Date.now() - start_time_nxt_obj > 2000 && this.count < 4)
+            if (Date.now() - start_time_nxt_obj > 1000 && this.count < 4)
             {
                 start_time_nxt_obj = Date.now();
                 this.count+=1;
@@ -214,7 +214,7 @@ class game{
                     time_at_start = Date.now();
                     if (is_hit_local)
                     {
-                        this_to_do.ctx.clearRect(curr_pos-50, pos_y, 80, 80);
+                        this_to_do.ctx.clearRect(curr_pos-50, pos_y-10, 80, 80);
                         is_hit_local = false;
                     }
                     if (curr_pos <= 50)
@@ -250,12 +250,12 @@ class game{
             this.is_element_hit[curr_pos-50] = true;
             if(this.is_brick_or_balloon[curr_pos-50] % 2 == 0)
             {
-                this.ctx.drawImage(this.pop, curr_pos-50, dart_pos_y, 80, 80);
+                this.ctx.drawImage(this.pop, curr_pos-50, dart_pos_y-10, 80, 80);
                 this.score += 1;
             }
             else
             {
-                this.ctx.drawImage(this.oops, curr_pos-50, dart_pos_y, 80, 80);
+                this.ctx.drawImage(this.oops, curr_pos-50, dart_pos_y-10, 80, 80);
             }
             return true;
         }
