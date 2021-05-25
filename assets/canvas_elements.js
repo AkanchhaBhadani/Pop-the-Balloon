@@ -29,10 +29,10 @@ function draw_start_window()
     let canvas = document.getElementById("game_area");
     let ctx = canvas.getContext("2d");
     ctx.beginPath();
-    ctx.fillStyle = "violet";
+    ctx.strokeStyle = "black"
     ctx.fillRect(300, 100, 500, 250);
     ctx.font = "bolder 40px Copperplate, Papyrus, fantasy";
-    ctx.fillStyle = "black";
+    ctx.fillStyle = "white";
     ctx.fillText("Instructions:",420, 135) ;
     ctx.font = "bolder 25px Copperplate, Papyrus, fantasy";
     ctx.fillText("Click the game area to activate it",310, 185) ;

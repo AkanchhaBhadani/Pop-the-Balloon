@@ -302,6 +302,8 @@ class game{
         return false;
     }
 }
+
+//main function
 draw_start_window();
 addEventListener("keydown", (event)=>{start(event.code);});
 var has_game_started = false;
