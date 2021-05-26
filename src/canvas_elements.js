@@ -17,7 +17,7 @@ function draw_game_over()
     ctx.beginPath();
     ctx.fillStyle = "black";
     ctx.fillRect(380, 250, 300, 100);
-    ctx.font = "bolder 50px Copperplate, Papyrus, fantasy";
+    ctx.font = "bolder 50px Papyrus";
     ctx.fillStyle = "white";
     ctx.fillText("Game Over", 400, canvas.height/2);
     ctx.font = "20px Copperplate, Papyrus, fantasy";
@@ -31,10 +31,10 @@ function draw_start_window()
     ctx.beginPath();
     ctx.strokeStyle = "black"
     ctx.fillRect(300, 100, 500, 250);
-    ctx.font = "bolder 40px Copperplate, Papyrus, fantasy";
+    ctx.font = "bolder 40px Papyrus";
     ctx.fillStyle = "white";
     ctx.fillText("Instructions:",420, 135) ;
-    ctx.font = "bolder 25px Copperplate, Papyrus, fantasy";
+    ctx.font = "bolder 25px Papyrus";
     ctx.fillText("Click the game area to activate it",310, 185) ;
     ctx.fillText("Use arrow keys for shooting and moving dart",308, 235) ;
     ctx.fillText("Pop as many ballons as you can",310, 285);
